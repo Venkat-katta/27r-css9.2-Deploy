@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }     
+        
+      .md {
+        background-color: red;
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        gap: 5px;
+      }
+      .item1 {
+        background-color: aqua;
+        grid-column: 1/4;
+      }
+      .item2 {
+        background-color: blueviolet;
+        grid-row: 2/4;
+      }
+      .item3 {
+        background-color: orange;
+        grid-column: 2/4;
+      }
+
+      .item4 {
+        background-color: burlywood;
+        grid-column:2/4;
+       
+      }
+      .item5 {
+        background-color: greenyellow;
+        grid-column: 1/3;
+       
+      }
+      .item6 {
+        background-color: cadetblue;
+       
+      }
+      .div1{
+        display: grid;
+        padding: 10px;
+        height: 400px;
+       margin-top: 100px;
+        grid-template-areas: 
+        "area1 area1 area1"
+        "area2 area3 area4"
+        "area2 area5 area4"
+        "area6 area6 area6";
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .iteam1{
+        
+        background-image: url("sunrise-over-the-lake-with-tree-and-birds.jpg") ;
+        grid-area: area1 ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     .iteam2{
+        background-image: url("tree-736885_1280.jpg") ;
+        grid-area: area2;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     .iteam3{
+        background-image: url("images.jpg");
+        grid-area: area3;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     .iteam4{
+        background-image: url("vibrant-8544591_640.png");
+        grid-area: area4;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+     .iteam5{
+        background-image: url("istockphoto-1403500817-612x612.jpg");
+        grid-area: area5;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .iteam6{
+        background-image: url("360_F_615496890_W34yB8VDE6n5pehb5QCt1ek5oEvRo9qA.jpg");
+        grid-area: area6;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #div2{
+      display: grid;
+      padding: 10px;
+      margin-top: 50px;
+      grid-template-areas: 
+      "area1 area2 area4"
+      "area5 area3 area3"
+      "area6 area3 area3";
+      gap: 10px;
+      background-color: blueviolet;
+     
+     }
+     #div2 .iteam1{
+        display: grid;
+        background-color: brown;
+        grid-area: area1;
+       height: 80px;
+     }
+    #div2 .iteam2{
+        background-color: blueviolet;
+        grid-area: area2;
+        height: 80px;
+     }
+    #div2 .iteam3{
+        background-color: chocolate;
+        grid-area: area3;
+        height: 170px;
+        
+     }
+    #div2 .iteam4{
+        background-color: chartreuse;
+        grid-area: area4;
+        height: 80px;
+     }
+    #div2 .iteam5{
+        background-color: coral;
+        grid-area: area5;
+        height: 80px;
+     }
+    #div2 .iteam6{
+        background-color: rgb(255, 0, 162);
+        grid-area: area6;
+        height: 80px;
+     }
+    .div3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "area1 area2 area2 area3"
+        "area1 area4 area5 area6"
+        "area1 area7 area8 area6";
+        margin-top: 80px;
+        padding: 10px;
+        
+       gap: 10px;
+        background-color: deeppink;
+       
+     }
+    .div3 .iteam1{
+         
+         grid-area: area1;
+         height: 570px;
+     }
+    .div3 .iteam2{
+        
+        grid-area: area2;
+        
+     }
+    .div3 .iteam3{
+     background-image: url("./sunrise-over-the-lake-with-tree-and-birds.jpg");
+        grid-area: area3;
+     }
+    .div3 .iteam4{
+        grid-area: area4;
+        height: 200px;
+     }
+    .div3 .iteam5{
+       grid-area: area5;
+       height: 200px;
+     }
+    .div3 .iteam6{
+       grid-area: area6;
+       height: 362px;
+     }
+     .div3 .iteam7{
+        background-image: url("sunrise-over-the-lake-with-tree-and-birds.jpg");
+        grid-area: area7;
+        height: 150px;
+     }
+     .div3 .iteam8{
+        background-image: url("pure-nature-landscape-single-tree-in-green-field-free-photo.webp");
+        grid-area: area8;
+        height: 150px;
+     }
+   
+    </style>
+  </head>
+  <body>
+    <div class="md">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">item3</div>
+      <div class="item4">item4</div>
+      <div class="item5">item5</div>
+      <div class="item6">item6</div>
+    </div>
+    <div class="div1" style="background-color: aqua;">
+        <div class="iteam1">iteam1</div>
+        <div class="iteam2">iteam2</div>
+        <div class="iteam3">iteam3</div>
+        <div class="iteam4">iteam4</div>
+        <div class="iteam5">iteam5</div>
+        <div class="iteam6">iteam6</div>
+    </div>
+    <div id="div2">
+        <div class="iteam1">iteam1</div>
+        <div class="iteam2">iteam2</div>
+        <div class="iteam3">iteam3</div>
+        <div class="iteam4">iteam4</div>
+        <div class="iteam5">iteam5</div>
+        <div class="iteam6">iteam6</div>
+        </div> 
+    <div class="div3">
+        <div class="iteam1">iteam1</div>
+        <div class="iteam2">iteam2</div>
+        <div cass="iteam3">iteam3</div>
+        <div class="iteam4">iteam4</div>
+        <div class="iteam5">iteam5</div>
+        <div class="iteam6">iteam6</div>
+        <div class="iteam7">iteam7</div>
+        <div class="iteam8">iteam8</div>
+    </div>
+        
+  </body>
+</html>
